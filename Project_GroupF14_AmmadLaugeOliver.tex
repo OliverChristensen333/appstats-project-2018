@@ -118,11 +118,10 @@ The rail width $d_{rail}$ and ball radius $R_{ball}$ were measured using a calip
 
 $\theta$ was calculated using both a protractor and by calculating it from the length and height of the incline measured using a ruler, then getting the angle via Pythagoras' equation. $\Delta \theta$ was calculated by turning the experimental setup 180 degrees and measuring $\theta$, along with the incline length and height again. As the value should be $\theta + \Delta \theta$ for one side and $\theta - \Delta \theta$ for the other, the difference between the measurements should be equal to $2 \Delta \theta$.
 
-The acceleration $a$ was obtained by measuring the gate positions on the incline and times when the ball passes through the gate in order to get the acceleration $a$ (assumed constant) using a quadratic fit. One value for $a$ was obtained for each of the the $2*15$ data sets – half of which were measured after rotations of the experimental setup. The error on each acceleration was determined through error propagation of the errors of distance measurements (measured with a ruler). Our estimation of the true acceleration is then the weighted average of these values, resulting in ### for the first 15 measurements and ### for the last 15 measurements.
+The acceleration $a$ was obtained by measuring the gate positions on the incline and times when the ball passes through the gate in order to get the acceleration $a$ (assumed constant) using a quadratic fit.
 
 The times when the ball passes the gates were captured using the program Waveforms, with a rate of $5kHz$.
 
-The acceleration was obtained by performing a quadratic fit on the data points (Time [s], Position [m]). One value for a was obtained for each of the the 2 * 15 data sets – half of which were measured after rotations of the experimental setup. The error on each acceleration was determined through error propagation of the errors of distance measurements (measured with a ruler). Our estimation of the true acceleration is then the weighted average of these values, resulting in ### for the first 15 measurements and ### for the last 15 measurements.
 
 
 % ------------------------------------------------------------------------------------------ %
@@ -166,6 +165,8 @@ The measurements of the pendulum length calculated from the top of the hook to t
 
 
 \subsection{Ball on an incline}
+
+
 \sisetup{round-precision=4, round-mode=figures}
 \begin{table}
   \begin{tabularx}{\linewidth}{*{2}X @{~$\pm$~} *{2}X}
@@ -178,6 +179,7 @@ $d_{\mathrm{rail}}$ [\si{\m}] & \num{0.0063881422924901175} & \num{4.44554224474
   \end{tabularx}
 \end{table}
 
+The acceleration was obtained by performing a quadratic fit on the data points (Time [\si{\s}], Position [\si{m}]). One value for $a$ was obtained for each of the the $2 * 15$ data sets – half of which were measured after a 180 degree rotation of the experimental setup. The error on each acceleration was determined through error propagation of the errors of distance measurements (measured with a ruler). Our estimation of the true acceleration is then the weighted average of these values, resulting in $1.521 \pm 2.048 * 10^{-3}   \frac{m}{s^2}$   for the first 15 measurements and ### for the last 15 measurements.
 For the ball-on-incline experiment, we measured $g$ to be $9.79963+0.020855$.
 
 % ------------------------------------------------------------------------------------------ %
@@ -189,7 +191,9 @@ For the ball-on-incline experiment, we measured $g$ to be $9.79963+0.020855$.
 % ------------------------------------------------------------------------------------------ %
 \section{Conclusion}
 
-In conclusion, the gravitational acceleration $g$ was measured using both a simple pendulum and a ball on incline setup.
+In conclusion, the gravitational acceleration $g$ was measured using both a simple pendulum and a ball on incline setup. $g$ was measured to be $9.81543 \pm 0.02723 \frac{m}{s^2}$ and $9.79963+0.020855 \frac{m}{s^2}$, for the pendulum and incline experiment respectively. Both results are in good agreement with the reference "true value", at a z-score of $0.020711$ and $0$, respectively.
+
+For the pendulum experiment, $g$ was measured to be $9.81543 \pm 0.02723 \frac{m}{s^2}$, whereas 
 
 
 % ------------------------------------------------------------------------------------------ %
