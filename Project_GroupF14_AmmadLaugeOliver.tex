@@ -1,31 +1,41 @@
 \documentclass[a4paper,% A4 papir size
-aps,% Document gets APS layout
-prl,% more layout, section numbering is removed
-amsfonts,% load AMS fonts
-amssymb,% load more AMS symboler
-amsmath,% load AMS math (equation environment and so on...)
-nobibnotes,% If BibTex is not used, REVTeX should be told to use normal footnotes
-twocolumn, % two-column layout
-twoside,% to-sided print
-balancelastpage,% balancing the last page when using two columns
-eqsecnum] % numbering the equations with the sectionnumber
-{revtex4-1}
+                aps,% Document gets APS layout
+                prl,% more layout, section numbering is removed
+                amsfonts,% load AMS fonts
+                amssymb,% load more AMS symboler
+                amsmath,% load AMS math (equation environment and so on...)
+                nobibnotes,% If BibTex is not used, REVTeX should be told to use normal footnotes
+                twocolumn, % two-column layout
+                twoside,% to-sided print
+                balancelastpage,% balancing the last page when using two columns
+                eqsecnum] % numbering the equations with the sectionnumber
+                {revtex4-1}
 \usepackage[utf8]{inputenc} % Correct formatting, makes danish letters available
 \usepackage[english]{babel} % Language
 
 % Place all other packages you use here i.e. graphicx, subfiles...
-\usepackage{amsmath, amssymb} \usepackage{url} \usepackage{tabularx}
-\usepackage{wrapfig} \usepackage{subfiles}
-
+\usepackage{amsmath, amssymb}
+\usepackage{url}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{subfiles}
 % \usepackage[squaren]{SIunits}
-\usepackage{siunitx} \sisetup{ per-mode=fraction, fraction-function=\tfrac,
-  separate-uncertainty = true,
-  % bracket-numbers = false,
-  scientific-notation = true, uncertainty-separator = {\,} }
+\usepackage{siunitx}
+\sisetup{per-mode=fraction,
+        fraction-function=\tfrac,
+        separate-uncertainty = true,
+        % bracket-numbers = false,
+        scientific-notation = true,
+        uncertainty-separator = {\,}
+      }
 \usepackage{caption}
 \captionsetup{labelfont={footnotesize,bf},textfont=footnotesize,format=hang,indention=-0.5cm} %makes nicer indents
-\usepackage[normalem]{ulem} \usepackage{subfigure} \usepackage{lipsum}
-\usepackage{todonotes} \usepackage{booktabs} \usepackage{microtype}
+\usepackage[normalem]{ulem}
+\usepackage{subfigure}
+\usepackage{lipsum}
+\usepackage{todonotes}
+\usepackage{booktabs}
+\usepackage{microtype}
 \begin{document} % Starts the actual document
 \selectlanguage{english}
 
@@ -210,7 +220,7 @@ $g = 9.81552 \pm 0.02723 \frac{m}{s^2}$. For the laser measurement only, $g =
 9.81467 \pm 0.02740 \frac{m}{s^2}$. While our accuracy is good, our precision is
 not particularly high, which is primarily due to the error on our period
 measurements. As can be seen in Table I, the period's impact on $g$ is much
-larger than that of L.
+larger than that of $L$.
 
 Figure 1 shows
 
@@ -244,6 +254,7 @@ measurements.
 
 For the ball-on-incline experiment, we measured $g$ to be $\SI{9.79963 \pm
   0.020855}{\m\per\s\squared}$.
+
 
 % ------------------------------------------------------------------------------------------ %
 \section{Discussion}
